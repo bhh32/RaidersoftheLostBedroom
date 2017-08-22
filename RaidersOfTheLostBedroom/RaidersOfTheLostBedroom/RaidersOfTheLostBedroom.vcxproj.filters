@@ -24,12 +24,30 @@
     <ClCompile Include="InventoryActions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="playercharacters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="enemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="trap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InventoryItems.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="InventoryActions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="playercharacters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="enemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

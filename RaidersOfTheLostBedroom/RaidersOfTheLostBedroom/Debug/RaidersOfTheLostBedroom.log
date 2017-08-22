@@ -1,3 +1,5 @@
-﻿  InventoryActions.cpp
-  RaidersOfTheLostBedroom.vcxproj -> c:\users\bryan\Source\Repos\Module_1_Project_Tests\RaidersOfTheLostBedroom\Debug\RaidersOfTheLostBedroom.exe
-  RaidersOfTheLostBedroom.vcxproj -> c:\users\bryan\Source\Repos\Module_1_Project_Tests\RaidersOfTheLostBedroom\Debug\RaidersOfTheLostBedroom.pdb (Partial PDB)
+﻿  enemy.cpp
+c:\users\bryan\source\repos\raidersofthelostbedroom\raidersofthelostbedroom\raidersofthelostbedroom\enemy.cpp(62): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\bryan\source\repos\raidersofthelostbedroom\raidersofthelostbedroom\raidersofthelostbedroom\enemy.cpp(82): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  RaidersOfTheLostBedroom.vcxproj -> C:\Users\bryan\Source\Repos\RaidersoftheLostBedroom\RaidersOfTheLostBedroom\Debug\RaidersOfTheLostBedroom.exe
+  RaidersOfTheLostBedroom.vcxproj -> C:\Users\bryan\Source\Repos\RaidersoftheLostBedroom\RaidersOfTheLostBedroom\Debug\RaidersOfTheLostBedroom.pdb (Partial PDB)

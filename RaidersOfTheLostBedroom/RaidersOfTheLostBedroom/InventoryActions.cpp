@@ -1,13 +1,34 @@
 #include <iostream>
 #include "InventoryActions.h"
 
-void InventoryActions::PickupItem(Objects newObject)
+void InventoryActions::PickupItem(int newObject)
 {
+	Objects chosenObj;
+
+	switch (newObject)
+	{
+	case 1:
+		chosenObj = carrot;
+		break;
+	case 2:
+		chosenObj = shovel;
+		break;
+	case 3:
+		chosenObj = chair;
+		break;
+	case 4:
+		chosenObj = sword;
+		break;
+	case 5:
+		chosenObj = knife;
+		break;
+	default:
+		printf("You didn't choose a valid object!\n");
+	}
+
 	if (inventory.slotNumber < 3)
 	{
-		itemSlots[newObject];
-
-		switch (newObject)
+		switch (chosenObj)
 		{
 		case carrot:
 			inventory.carrotCount++;
@@ -42,7 +63,55 @@ void InventoryActions::PickupItem(Objects newObject)
 }
 
 // TODO
-void InventoryActions::DropItem(Objects droppedItem)
+void InventoryActions::DropItem(int droppedItem)
 {
+	Objects itemToDrop;
 
+	switch (droppedItem)
+	{
+	case 1:
+		itemToDrop = carrot;
+		break;
+	case 2:
+		itemToDrop = shovel;
+		break;
+	case 3:
+		itemToDrop = chair;
+		break;
+	case 4:
+		itemToDrop = sword;
+		break;
+	case 5:
+		itemToDrop = knife;
+		break;
+	default:
+		printf("You didn't select a valid object to drop!\n");
+		break;
+	}
+		switch (itemToDrop)
+		{
+		case carrot:
+			inventory.carrotCount--;
+			printf("You dropped a carrot!\n You have %d carrots left!\n", inventory.carrotCount);
+			break;
+		case shovel:
+			inventory.shovelCount--;
+			printf("You dropped a shovel!\n You have %d shovels left!\n", inventory.shovelCount);
+			break;
+		case chair:
+			inventory.chairCount--;
+			printf("You dropped a chair!\n You have %d chairs left!\n", inventory.carrotCount);
+			break;
+		case sword:
+			inventory.swordCount--;
+			printf("You dropped a sword!\n You have %d swords left!\n", inventory.swordCount);
+			break;
+		case knife:
+			inventory.knifeCount--;
+			printf("You dropped a knife!\n You have %d knives left!\n", inventory.knifeCount);
+			break;
+		default:
+			printf("You didn't choose a valid inventory item!\n");
+			break;
+		}
 }

@@ -111,13 +111,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="enemy.cpp" />
     <ClCompile Include="InventoryActions.cpp" />
     <ClCompile Include="InventoryItems.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="playercharacters.cpp" />
+    <ClCompile Include="trap.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="enemy.h" />
     <ClInclude Include="InventoryActions.h" />
     <ClInclude Include="InventoryItems.h" />
+    <ClInclude Include="playercharacters.h" />
+    <ClInclude Include="trap.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

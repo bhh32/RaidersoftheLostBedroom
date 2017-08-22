@@ -11,5 +11,7 @@ int main()
 	invActions.PickupItem(invItems.sword);
 	invActions.PickupItem(invItems.chair);
 
+	invActions.DropItem(invItems.carrot);
+
 	system("Pause");
 }

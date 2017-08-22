@@ -7,8 +7,8 @@
 class InventoryActions:InventoryItems
 {
 public:
-	void PickupItem(Objects newObject);
-	void DropItem(Objects newObject);
+	void PickupItem(int newObject);
+	void DropItem(int newObject);
 	Inventory inventory;
 };
 #endif INVENTORYACTIONS_H
