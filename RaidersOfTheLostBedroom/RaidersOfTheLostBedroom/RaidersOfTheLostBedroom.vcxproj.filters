@@ -33,6 +33,9 @@
     <ClCompile Include="trap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="canbat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InventoryItems.h">
@@ -48,6 +51,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="trap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="canbat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

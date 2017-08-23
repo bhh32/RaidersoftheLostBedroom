@@ -2,13 +2,8 @@
 #include <time.h>
 #include "enemy.h"
 
-Enemy::Enemy()
-{
-	// Prints 'You see an enemy!' to the console.
-	printf("You see an enemy!\n");
-}
 
-void Enemy::DamageTaken(int damage)
+void DamageTaken(int damage)
 {
 	// Takes the damage away from the health
 	health -= damage;
@@ -19,7 +14,7 @@ void Enemy::DamageTaken(int damage)
 		Death();
 }
 
-int Enemy::DamageGiven(int damage)
+int DamageGiven(int damage)
 {
 	// checks to see if damage is less than the mindamagegiven
 	if (damage < minDamageGiv)
@@ -56,7 +51,7 @@ int Enemy::DamageGiven(int damage)
 	return damage;
 }
 
-int Enemy::CriticalHit(int maxDamGiv, int minDamGiv)
+int CriticalHit(int maxDamGiv, int minDamGiv)
 {
 	// seed the random number w/ time(nullptr) so that it's a truly random number every time
 	srand(time(nullptr));
@@ -76,7 +71,7 @@ int Enemy::CriticalHit(int maxDamGiv, int minDamGiv)
 		return 0;
 }
 
-void Enemy::DodgeChance(int damage, int playerSpeed)
+void DodgeChance(int damage, int playerSpeed)
 {
 	// Seeds the random function with time(nullptr) to get a random number everytime
 	srand(time(nullptr));
@@ -103,15 +98,8 @@ void Enemy::DodgeChance(int damage, int playerSpeed)
 	}
 }
 
-void Enemy::Death()
+void Death()
 {
 	// The Enemy is 'killed'
 	printf("The enemy has died!\n");
-	// The Destructor for the object is called
-	Enemy::~Enemy();
-}
-
-Enemy::~Enemy()
-{
-	printf("The enemy has been destroyed!\n");
 }
